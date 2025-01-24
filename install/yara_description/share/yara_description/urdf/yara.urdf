@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="yara">
+ 
+  <link name="base_link"/>
+
+  <joint name="yara_base" type="fixed">
+    <parent link="base_link"/>
+    <child link="yara_link_0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  
+  <link name="yara_link_0">
+    <visual>
+    <origin rpy="0 0 0" xyz="0.0302686 0.015353 0.06"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link0.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+    <origin rpy="0 0 0" xyz="0.0302686 0.015353 0.06"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link0.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+
+  <joint name="yara_joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.06"/>
+    <parent link="yara_link_0"/>
+    <child link="yara_link_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5" lower="-6.28" upper="6.28" velocity="0.5"/>
+  </joint>
+
+  <link name="yara_link_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0302686 0.015353 0"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link1.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0302686 0.015353 0"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link1.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+
+  <joint name="yara_joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.030585 0 0.08"/>
+    <parent link="yara_link_1"/>
+    <child link="yara_link_2"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="5" lower="-1.3" upper="0.17" velocity="0.5"/>
+  </joint>
+
+  <link name="yara_link_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.07 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link2.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.07 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link2.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+
+  <joint name="yara_joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0.005 0 0.151049"/>
+    <parent link="yara_link_2"/>
+    <child link="yara_link_3"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="5" lower="-1.6" upper="1.6" velocity="0.5"/>
+  </joint>
+
+  <link name="yara_link_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0558536 0.0195 -0.231049"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link3.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0558536 0.0195 -0.231049"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link3.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+
+  <joint name="yara_joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.076893"/>
+    <parent link="yara_link_3"/>
+    <child link="yara_link_4"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="5" lower="-1.5" upper="0.7" velocity="0.5"/>
+  </joint>
+
+  <link name="yara_link_4">
+    <visual>
+      <origin rpy="0 0 1.5707963" xyz="0 0.003 -0.031"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link4.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 1.5707963" xyz="0 0.003 -0.031"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link4.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+
+  <joint name="yara_joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.003 0"/>
+    <parent link="yara_link_4"/>
+    <child link="yara_link_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5" lower="-6.28" upper="6.28" velocity="0.5"/>
+  </joint>
+
+  <link name="yara_link_5">
+    <visual>
+      <origin rpy="0 0 1.5707963" xyz="0 0 -0.03"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link5.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 1.5707963" xyz="0 0 -0.03"/>
+      <geometry>
+        <mesh filename="file:///home/srki/yara_ws/src/yara_description/meshes/Link5.stl"/>
+      </geometry>
+      <material name="yara_white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+  
+  <joint name="yara_joint_5_tool0" type="fixed">
+    <parent link="yara_link_5"/>
+    <child link="yara_tool0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.047"/>
+  </joint>
+
+  <link name="yara_tool0"/> 
+
+</robot>

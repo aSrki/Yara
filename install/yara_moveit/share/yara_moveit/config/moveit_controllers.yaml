@@ -1,0 +1,16 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - yara_arm_controller
+
+  yara_arm_controller:
+    type: FollowJointTrajectory
+    joints:
+      - yara_joint_1
+      - yara_joint_2
+      - yara_joint_3
+      - yara_joint_4
+      - yara_joint_5

@@ -1,0 +1,8 @@
+# Default initial positions for yara's ros2_control fake system
+
+initial_positions:
+  yara_joint_1: 0
+  yara_joint_2: 0
+  yara_joint_3: 0
+  yara_joint_4: 0
+  yara_joint_5: 0

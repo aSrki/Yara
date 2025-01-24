@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/yara_driver/yara_driver.egg-info
+writing ../../build/yara_driver/yara_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/yara_driver/yara_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/yara_driver/yara_driver.egg-info/entry_points.txt
+writing requirements to ../../build/yara_driver/yara_driver.egg-info/requires.txt
+writing top-level names to ../../build/yara_driver/yara_driver.egg-info/top_level.txt
+writing manifest file '../../build/yara_driver/yara_driver.egg-info/SOURCES.txt'
+reading manifest file '../../build/yara_driver/yara_driver.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/yara_driver/yara_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/srki/yara_ws/build/yara_driver/build
+creating /home/srki/yara_ws/build/yara_driver/build/lib
+creating /home/srki/yara_ws/build/yara_driver/build/lib/yara_driver
+copying yara_driver/driver.py -> /home/srki/yara_ws/build/yara_driver/build/lib/yara_driver
+copying yara_driver/__init__.py -> /home/srki/yara_ws/build/yara_driver/build/lib/yara_driver
+running install
+running install_lib
+creating /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver
+copying /home/srki/yara_ws/build/yara_driver/build/lib/yara_driver/driver.py -> /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver
+copying /home/srki/yara_ws/build/yara_driver/build/lib/yara_driver/__init__.py -> /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver
+byte-compiling /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver/driver.py to driver.cpython-312.pyc
+byte-compiling /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/srki/yara_ws/install/yara_driver/share/ament_index
+creating /home/srki/yara_ws/install/yara_driver/share/ament_index/resource_index
+creating /home/srki/yara_ws/install/yara_driver/share/ament_index/resource_index/packages
+copying resource/yara_driver -> /home/srki/yara_ws/install/yara_driver/share/ament_index/resource_index/packages
+copying package.xml -> /home/srki/yara_ws/install/yara_driver/share/yara_driver
+copying launch/yara.launch.py -> /home/srki/yara_ws/install/yara_driver/share/yara_driver
+copying launch/yara_no_rviz.launch.py -> /home/srki/yara_ws/install/yara_driver/share/yara_driver
+running install_egg_info
+Copying ../../build/yara_driver/yara_driver.egg-info to /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver-0.0.0-py3.12.egg-info
+running install_scripts
+Installing state_publisher script to /home/srki/yara_ws/install/yara_driver/lib/yara_driver
+Installing yara_driver script to /home/srki/yara_ws/install/yara_driver/lib/yara_driver
+writing list of installed files to '/home/srki/yara_ws/build/yara_driver/install.log'

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="yara">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import yara urdf file -->
+    <xacro:include filename="$(find yara_description)/urdf/yara.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="yara.ros2_control.xacro" />
+
+
+    <xacro:yara_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

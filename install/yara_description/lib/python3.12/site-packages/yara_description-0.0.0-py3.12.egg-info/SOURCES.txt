@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/yara_description/yara_description.egg-info/PKG-INFO
+../../build/yara_description/yara_description.egg-info/SOURCES.txt
+../../build/yara_description/yara_description.egg-info/dependency_links.txt
+../../build/yara_description/yara_description.egg-info/requires.txt
+../../build/yara_description/yara_description.egg-info/top_level.txt
+../../build/yara_description/yara_description.egg-info/zip-safe
+resource/yara_description
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+urdf/display.rviz
+urdf/yara.urdf
+yara_description/__init__.py

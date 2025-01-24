@@ -1,0 +1,3 @@
+[console_scripts]
+state_publisher = yara_driver.yara_driver:main
+yara_driver = yara_driver.driver:main

@@ -1,0 +1,4 @@
+source;share/yara_moveit/local_setup.bash
+source;share/yara_moveit/local_setup.dsv
+source;share/yara_moveit/local_setup.sh
+source;share/yara_moveit/local_setup.zsh

@@ -1,0 +1,42 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/srki/yara_ws/build/yara_moveit
+-- Install configuration: ""
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/ament_index/resource_index/package_run_dependencies/yara_moveit
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/ament_index/resource_index/parent_prefix_path/yara_moveit
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/environment/ament_prefix_path.sh
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/environment/path.sh
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/environment/path.dsv
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/local_setup.bash
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/local_setup.sh
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/local_setup.zsh
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/local_setup.dsv
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.dsv
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/ament_index/resource_index/packages/yara_moveit
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/cmake/yara_moveitConfig.cmake
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/cmake/yara_moveitConfig-version.cmake
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.xml
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/demo.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/spawn_controllers.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/moveit_rviz.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/setup_assistant.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/warehouse_db.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/move_group.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/rsp.launch.py
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/launch/static_virtual_joint_tfs.launch.py
+-- Up-to-date: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/ros2_controllers.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/joint_limits.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/yara.srdf
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/yara.ros2_control.xacro
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/kinematics.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/sensors_3d.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/moveit.rviz
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/initial_positions.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/pilz_cartesian_limits.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/yara.urdf.xacro
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/config/moveit_controllers.yaml
+-- Installing: /home/srki/yara_ws/install/yara_moveit/share/yara_moveit/.setup_assistant
