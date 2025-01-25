@@ -11,7 +11,6 @@
             <joint name="yara_joint_1">
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
-                <command_interface name="effort"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['yara_joint_1']}</param>
                 </state_interface>
@@ -21,7 +20,6 @@
             <joint name="yara_joint_2">
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
-                <command_interface name="effort"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['yara_joint_2']}</param>
                 </state_interface>
@@ -31,7 +29,6 @@
             <joint name="yara_joint_3">
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
-                <command_interface name="effort"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['yara_joint_3']}</param>
                 </state_interface>
@@ -41,7 +38,6 @@
             <joint name="yara_joint_4">
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
-                <command_interface name="effort"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['yara_joint_4']}</param>
                 </state_interface>
@@ -51,7 +47,6 @@
             <joint name="yara_joint_5">
                 <command_interface name="position"/>
                 <command_interface name="velocity"/>
-                <command_interface name="effort"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['yara_joint_5']}</param>
                 </state_interface>

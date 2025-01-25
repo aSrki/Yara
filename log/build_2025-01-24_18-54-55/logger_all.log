@@ -1,0 +1,245 @@
+[0.092s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.092s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x792fc02c5940>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x792fc02c5490>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x792fc02c5490>>, mixin_verb=('build',))
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.121s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/srki/yara_ws'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_description) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yara_description' with type 'ros.ament_python' and name 'yara_description'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_driver) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yara_driver' with type 'ros.ament_python' and name 'yara_driver'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/yara_moveit) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yara_moveit' with type 'ros.ament_cmake' and name 'yara_moveit'
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.158s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/srki/yara_ws/install/yara_moveit' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.158s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/srki/yara_ws/install/yara_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.158s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/srki/yara_ws/install/yara_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.158s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/srki/yara_ws/install/yara_moveit' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.158s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/srki/yara_ws/install
+[0.160s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 409 installed packages in /opt/ros/jazzy
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'cmake_args' from command line to 'None'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'yara_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/srki/yara_ws/build/yara_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/srki/yara_ws/install/yara_description', 'merge_install': False, 'path': '/home/srki/yara_ws/src/yara_description', 'symlink_install': False, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'yara_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/srki/yara_ws/build/yara_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/srki/yara_ws/install/yara_driver', 'merge_install': False, 'path': '/home/srki/yara_ws/src/yara_driver', 'symlink_install': False, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'yara_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'yara_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/srki/yara_ws/build/yara_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/srki/yara_ws/install/yara_moveit', 'merge_install': False, 'path': '/home/srki/yara_ws/src/yara_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.202s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.203s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/srki/yara_ws/src/yara_description' with build type 'ament_python'
+[0.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('yara_description', 'ament_prefix_path')
+[0.205s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_description/share/yara_description/hook/ament_prefix_path.ps1'
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/srki/yara_ws/install/yara_description/share/yara_description/hook/ament_prefix_path.dsv'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_description/share/yara_description/hook/ament_prefix_path.sh'
+[0.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.209s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/srki/yara_ws/src/yara_driver' with build type 'ament_python'
+[0.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('yara_driver', 'ament_prefix_path')
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_driver/share/yara_driver/hook/ament_prefix_path.ps1'
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/srki/yara_ws/install/yara_driver/share/yara_driver/hook/ament_prefix_path.dsv'
+[0.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_driver/share/yara_driver/hook/ament_prefix_path.sh'
+[0.211s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.211s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/srki/yara_ws/src/yara_description'
+[0.403s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.596s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/srki/yara_ws/src/yara_driver'
+[0.596s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.596s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/srki/yara_ws/src/yara_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_description build --build-base /home/srki/yara_ws/build/yara_description/build install --record /home/srki/yara_ws/build/yara_description/install.log --single-version-externally-managed install_data
+[1.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/srki/yara_ws/src/yara_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_driver build --build-base /home/srki/yara_ws/build/yara_driver/build install --record /home/srki/yara_ws/build/yara_driver/install.log --single-version-externally-managed install_data
+[1.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/srki/yara_ws/src/yara_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_description build --build-base /home/srki/yara_ws/build/yara_description/build install --record /home/srki/yara_ws/build/yara_description/install.log --single-version-externally-managed install_data
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description' for CMake module files
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description' for CMake config files
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description/lib'
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description/bin'
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description/lib/pkgconfig/yara_description.pc'
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages'
+[1.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('yara_description', 'pythonpath')
+[1.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_description/share/yara_description/hook/pythonpath.ps1'
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/srki/yara_ws/install/yara_description/share/yara_description/hook/pythonpath.dsv'
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_description/share/yara_description/hook/pythonpath.sh'
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_description/bin'
+[1.815s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yara_description)
+[1.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_description/share/yara_description/package.ps1'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/srki/yara_ws/install/yara_description/share/yara_description/package.dsv'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_description/share/yara_description/package.sh'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_description/share/yara_description/package.bash'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_description/share/yara_description/package.zsh'
+[1.818s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/srki/yara_ws/install/yara_description/share/colcon-core/packages/yara_description)
+[1.818s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/srki/yara_ws/src/yara_moveit' with build type 'ament_cmake'
+[1.818s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/srki/yara_ws/src/yara_moveit'
+[1.818s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.819s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver' for CMake module files
+[1.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/srki/yara_ws/src/yara_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_driver build --build-base /home/srki/yara_ws/build/yara_driver/build install --record /home/srki/yara_ws/build/yara_driver/install.log --single-version-externally-managed install_data
+[1.823s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver' for CMake config files
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver/lib'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver/bin'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver/lib/pkgconfig/yara_driver.pc'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages'
+[1.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('yara_driver', 'pythonpath')
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_driver/share/yara_driver/hook/pythonpath.ps1'
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/srki/yara_ws/install/yara_driver/share/yara_driver/hook/pythonpath.dsv'
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_driver/share/yara_driver/hook/pythonpath.sh'
+[1.825s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_driver/bin'
+[1.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yara_driver)
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_driver/share/yara_driver/package.ps1'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/srki/yara_ws/install/yara_driver/share/yara_driver/package.dsv'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_driver/share/yara_driver/package.sh'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_driver/share/yara_driver/package.bash'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_driver/share/yara_driver/package.zsh'
+[1.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/srki/yara_ws/install/yara_driver/share/colcon-core/packages/yara_driver)
+[1.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/srki/yara_ws/build/yara_moveit': AMENT_PREFIX_PATH=/home/srki/yara_ws/install/yara_description:/home/srki/yara_ws/install/yara_moveit:/home/srki/yara_ws/install/yara_driver:/opt/ros/jazzy CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/srki/yara_ws/install/yara_driver:/home/srki/yara_ws/install/yara_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake /home/srki/yara_ws/src/yara_moveit -DCMAKE_INSTALL_PREFIX=/home/srki/yara_ws/install/yara_moveit
+[2.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/srki/yara_ws/build/yara_moveit' returned '0': AMENT_PREFIX_PATH=/home/srki/yara_ws/install/yara_description:/home/srki/yara_ws/install/yara_moveit:/home/srki/yara_ws/install/yara_driver:/opt/ros/jazzy CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/srki/yara_ws/install/yara_driver:/home/srki/yara_ws/install/yara_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake /home/srki/yara_ws/src/yara_moveit -DCMAKE_INSTALL_PREFIX=/home/srki/yara_ws/install/yara_moveit
+[2.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/srki/yara_ws/build/yara_moveit': AMENT_PREFIX_PATH=/home/srki/yara_ws/install/yara_description:/home/srki/yara_ws/install/yara_moveit:/home/srki/yara_ws/install/yara_driver:/opt/ros/jazzy CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/srki/yara_ws/install/yara_driver:/home/srki/yara_ws/install/yara_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/srki/yara_ws/build/yara_moveit -- -j16 -l16
+[2.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/srki/yara_ws/build/yara_moveit' returned '0': AMENT_PREFIX_PATH=/home/srki/yara_ws/install/yara_description:/home/srki/yara_ws/install/yara_moveit:/home/srki/yara_ws/install/yara_driver:/opt/ros/jazzy CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/srki/yara_ws/install/yara_driver:/home/srki/yara_ws/install/yara_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/srki/yara_ws/build/yara_moveit -- -j16 -l16
+[2.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/srki/yara_ws/build/yara_moveit': AMENT_PREFIX_PATH=/home/srki/yara_ws/install/yara_description:/home/srki/yara_ws/install/yara_moveit:/home/srki/yara_ws/install/yara_driver:/opt/ros/jazzy CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/srki/yara_ws/install/yara_driver:/home/srki/yara_ws/install/yara_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/srki/yara_ws/build/yara_moveit
+[2.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yara_moveit)
+[2.553s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit' for CMake module files
+[2.553s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/srki/yara_ws/build/yara_moveit' returned '0': AMENT_PREFIX_PATH=/home/srki/yara_ws/install/yara_description:/home/srki/yara_ws/install/yara_moveit:/home/srki/yara_ws/install/yara_driver:/opt/ros/jazzy CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/srki/yara_ws/install/yara_driver:/home/srki/yara_ws/install/yara_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/srki/yara_ws/build/yara_moveit
+[2.554s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit' for CMake config files
+[2.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('yara_moveit', 'cmake_prefix_path')
+[2.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/hook/cmake_prefix_path.ps1'
+[2.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/hook/cmake_prefix_path.dsv'
+[2.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/hook/cmake_prefix_path.sh'
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/bin'
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/lib/pkgconfig/yara_moveit.pc'
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/lib/python3.12/site-packages'
+[2.555s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/bin'
+[2.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.ps1'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.dsv'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.sh'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.bash'
+[2.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.zsh'
+[2.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/srki/yara_ws/install/yara_moveit/share/colcon-core/packages/yara_moveit)
+[2.557s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yara_moveit)
+[2.557s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit' for CMake module files
+[2.558s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit' for CMake config files
+[2.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('yara_moveit', 'cmake_prefix_path')
+[2.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/hook/cmake_prefix_path.ps1'
+[2.558s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/hook/cmake_prefix_path.dsv'
+[2.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/hook/cmake_prefix_path.sh'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/bin'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/lib/pkgconfig/yara_moveit.pc'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/lib/python3.12/site-packages'
+[2.559s] Level 1:colcon.colcon_core.environment:checking '/home/srki/yara_ws/install/yara_moveit/bin'
+[2.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.ps1'
+[2.559s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.dsv'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.sh'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.bash'
+[2.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/srki/yara_ws/install/yara_moveit/share/yara_moveit/package.zsh'
+[2.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/srki/yara_ws/install/yara_moveit/share/colcon-core/packages/yara_moveit)
+[2.561s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.561s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.561s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.561s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.566s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.579s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.579s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/srki/yara_ws/install/local_setup.ps1'
+[2.580s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/srki/yara_ws/install/_local_setup_util_ps1.py'
+[2.581s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/srki/yara_ws/install/setup.ps1'
+[2.581s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/srki/yara_ws/install/local_setup.sh'
+[2.582s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/srki/yara_ws/install/_local_setup_util_sh.py'
+[2.582s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/srki/yara_ws/install/setup.sh'
+[2.583s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/srki/yara_ws/install/local_setup.bash'
+[2.583s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/srki/yara_ws/install/setup.bash'
+[2.584s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/srki/yara_ws/install/local_setup.zsh'
+[2.584s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/srki/yara_ws/install/setup.zsh'
