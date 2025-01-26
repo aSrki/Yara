@@ -26,7 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
                 'yara_driver = yara_driver.driver:main',
-                'state_publisher = yara_driver.yara_driver:main'
+                'state_publisher = yara_driver.driver:main'
         ],
 
     },

@@ -1,0 +1,23 @@
+[1.008s] Invoking command in '/home/srki/yara_ws/src/yara_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_driver build --build-base /home/srki/yara_ws/build/yara_driver/build install --record /home/srki/yara_ws/build/yara_driver/install.log --single-version-externally-managed install_data
+[1.293s] running egg_info
+[1.318s] writing ../../build/yara_driver/yara_driver.egg-info/PKG-INFO
+[1.318s] writing dependency_links to ../../build/yara_driver/yara_driver.egg-info/dependency_links.txt
+[1.318s] writing entry points to ../../build/yara_driver/yara_driver.egg-info/entry_points.txt
+[1.318s] writing requirements to ../../build/yara_driver/yara_driver.egg-info/requires.txt
+[1.318s] writing top-level names to ../../build/yara_driver/yara_driver.egg-info/top_level.txt
+[1.368s] reading manifest file '../../build/yara_driver/yara_driver.egg-info/SOURCES.txt'
+[1.368s] adding license file 'LICENSE'
+[1.368s] writing manifest file '../../build/yara_driver/yara_driver.egg-info/SOURCES.txt'
+[1.369s] running build
+[1.369s] running build_py
+[1.369s] running install
+[1.374s] running install_lib
+[1.399s] running install_data
+[1.400s] running install_egg_info
+[1.425s] removing '/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver-0.0.0-py3.12.egg-info' (and everything under it)
+[1.426s] Copying ../../build/yara_driver/yara_driver.egg-info to /home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages/yara_driver-0.0.0-py3.12.egg-info
+[1.426s] running install_scripts
+[1.584s] Installing state_publisher script to /home/srki/yara_ws/install/yara_driver/lib/yara_driver
+[1.584s] Installing yara_driver script to /home/srki/yara_ws/install/yara_driver/lib/yara_driver
+[1.584s] writing list of installed files to '/home/srki/yara_ws/build/yara_driver/install.log'
+[1.612s] Invoked command in '/home/srki/yara_ws/src/yara_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_driver build --build-base /home/srki/yara_ws/build/yara_driver/build install --record /home/srki/yara_ws/build/yara_driver/install.log --single-version-externally-managed install_data

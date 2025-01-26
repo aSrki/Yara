@@ -1,10 +1,6 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
-from std_msgs.msg import String
-from rclpy.qos import QoSProfile
-from tf2_ros import TransformBroadcaster, TransformStamped
-from geometry_msgs.msg import Quaternion
 import math
 import serial
 import pygame 
@@ -12,14 +8,16 @@ import struct
 import time
 import array
 import serial.tools.list_ports
+from control_msgs.action import FollowJointTrajectory
+from control_msgs.action import JointTrajectory
+
+from rclpy.action import ActionServer
 
 class RobotStatePublisher(Node):
 
     def __init__(self):
         super().__init__('yara_state_publisher')
         self.timer = self.create_timer(0.07, self.timer_callback)
-        self.arm_control_timer = self.create_timer(0.005, self.control_timer_callback)
-
 
         self.joint_state_publisher = self.create_publisher(JointState, 'joint_states', 10)
 
@@ -27,16 +25,35 @@ class RobotStatePublisher(Node):
 
         self.joint_state.name = ['yara_joint_1', 'yara_joint_2', 'yara_joint_3', 'yara_joint_4', 'yara_joint_5']
 
+        self.action_server = ActionServer(
+            self,
+            FollowJointTrajectory,
+            'yara_arm_controller/follow_joint_trajectory',
+            self.execute_callback
+        )
+
+        # self.trajectory_subscriber = self.create_subscription(
+        #     JointTrajectory,
+        #     '/yara_arm_controller/joint_trajectory',
+        #     self.received_angles_callabck,
+        #     10)
+
         ports = serial.tools.list_ports.comports()
         self.ser = None
         self.msg = bytearray()
         self.joint = 0
         self.msg_done = False
 
-        pygame.joystick.init()
-        pygame.init()
-        self._joystick = pygame.joystick.Joystick(0)
-        self._joystick.init()
+        self.declare_parameter(name="joystick")
+
+        self.use_joystick = self.get_parameter('joystick').get_parameter_value().bool_value
+
+        if(self.use_joystick):
+            pygame.joystick.init()
+            pygame.init()
+            self._joystick = pygame.joystick.Joystick(0)
+            self._joystick.init()
+            self.arm_control_timer = self.create_timer(0.005, self.control_timer_callback)
 
         for port, desc, _ in sorted(ports):
                 if "STM" in desc:
@@ -48,6 +65,52 @@ class RobotStatePublisher(Node):
                     time.sleep(0.1)
         
         self.init_robot_arm()
+
+    def received_angles_callabck(self, msg):
+        self.get_logger().info('Executing trajectory...')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        self.get_logger().info(f'BBBBBBBBBBBBBBBBBBBBBBBBBBBB')
+        
+    def execute_callback(self, goal_handle):
+        self.get_logger().info('Executing trajectory...')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+        self.get_logger().info(f'AAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+        feedback_msg = FollowJointTrajectory.Feedback()
+        
+
+        success = True
+        trajectory = goal_handle.request.trajectory
+        self.get_logger().info(f'Following point: {trajectory.points[-1].postions}')
+        for point in trajectory.points:
+            self.get_logger().info(f'Following point: {point.positions}')
+            feedback_msg.status = f'Following point: {point.positions}'
+            goal_handle.publish_feedback(feedback_msg)
+            
+            rclpy.spin_once(self, timeout_sec=1)
+        
+        result = FollowJointTrajectory.Result()
+        if success:
+            result.success = True
+            self.get_logger().info('Trajectory followed successfully.')
+        else:
+            result.success = False
+            self.get_logger().warn('Failed to follow trajectory.')
+
+        goal_handle.succeed()
+        return result
 
     def init_robot_arm(self):
         msg1 = bytearray(struct.pack("<f", 1))

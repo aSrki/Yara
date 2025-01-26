@@ -1,0 +1,20 @@
+[1.047s] Invoking command in '/home/srki/yara_ws/src/yara_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_description build --build-base /home/srki/yara_ws/build/yara_description/build install --record /home/srki/yara_ws/build/yara_description/install.log --single-version-externally-managed install_data
+[1.332s] running egg_info
+[1.356s] writing ../../build/yara_description/yara_description.egg-info/PKG-INFO
+[1.356s] writing dependency_links to ../../build/yara_description/yara_description.egg-info/dependency_links.txt
+[1.357s] writing requirements to ../../build/yara_description/yara_description.egg-info/requires.txt
+[1.357s] writing top-level names to ../../build/yara_description/yara_description.egg-info/top_level.txt
+[1.406s] reading manifest file '../../build/yara_description/yara_description.egg-info/SOURCES.txt'
+[1.406s] adding license file 'LICENSE'
+[1.406s] writing manifest file '../../build/yara_description/yara_description.egg-info/SOURCES.txt'
+[1.407s] running build
+[1.407s] running build_py
+[1.407s] running install
+[1.412s] running install_lib
+[1.437s] running install_data
+[1.437s] running install_egg_info
+[1.463s] removing '/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages/yara_description-0.0.0-py3.12.egg-info' (and everything under it)
+[1.463s] Copying ../../build/yara_description/yara_description.egg-info to /home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages/yara_description-0.0.0-py3.12.egg-info
+[1.464s] running install_scripts
+[1.621s] writing list of installed files to '/home/srki/yara_ws/build/yara_description/install.log'
+[1.646s] Invoked command in '/home/srki/yara_ws/src/yara_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/srki/yara_ws/build/yara_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/srki/yara_ws/install/yara_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yara_description build --build-base /home/srki/yara_ws/build/yara_description/build install --record /home/srki/yara_ws/build/yara_description/install.log --single-version-externally-managed install_data
